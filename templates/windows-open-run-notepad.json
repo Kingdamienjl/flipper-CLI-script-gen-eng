@@ -1,0 +1,17 @@
+{
+  "id": "windows-open-run-notepad",
+  "extends": "base-benign-open",
+  "compose": ["common-type-demo-text"],
+  "title": "Windows open run and launch notepad",
+  "description": "Open run dialog and type notepad",
+  "tags": ["windows", "notepad", "run"],
+  "supportedOs": ["windows"],
+  "riskLevel": "benign",
+  "requiredVars": [],
+  "steps": [
+    { "type": "keys", "value": "GUI r" },
+    { "type": "delay", "value": 200 },
+    { "type": "text", "value": "notepad" },
+    { "type": "keys", "value": "ENTER" }
+  ]
+}

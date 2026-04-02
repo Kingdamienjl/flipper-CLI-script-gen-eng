@@ -1,0 +1,9 @@
+{
+  "templateId": "mac-spotlight-open-notes",
+  "title": "mac-spotlight-open-notes",
+  "description": "Manifest for mac-spotlight-open-notes",
+  "tags": ["benign", "demo"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}

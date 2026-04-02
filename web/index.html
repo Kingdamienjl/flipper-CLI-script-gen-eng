@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Safe Macro Generator V4</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <h1>Safe Macro Generator V4</h1>
+  <p>Authorized lab/demo use only.</p>
+
+  <section>
+    <h2>Template browser</h2>
+    <input id="filter" placeholder="filter by id/tag/os text" />
+    <ul id="templateList"></ul>
+  </section>
+
+  <section>
+    <h2>Benign prompt</h2>
+    <input id="promptInput" placeholder="e.g., windows open notepad" />
+    <button id="applyPrompt">Match Prompt</button>
+  </section>
+
+  <section>
+    <h2>Preview</h2>
+    <pre id="preview"></pre>
+    <button id="downloadBtn">Download Preview</button>
+    <button id="exportBtn">Export Manifest Stub</button>
+  </section>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

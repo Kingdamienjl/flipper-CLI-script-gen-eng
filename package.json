@@ -1,0 +1,27 @@
+{
+  "name": "flipper-cli-script-gen-eng",
+  "version": "4.0.0",
+  "description": "Safe keyboard automation generator for authorized lab/demo use",
+  "type": "module",
+  "main": "cli/index.js",
+  "bin": {
+    "flipper-safe-gen": "./cli/index.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node cli/index.js --validate",
+    "list": "node cli/index.js --list-templates",
+    "search": "node cli/index.js --search windows",
+    "preview": "node cli/index.js --preview windows-open-run-notepad",
+    "prompt": "node cli/index.js --prompt \"open notepad and type hello\"",
+    "pack": "node cli/index.js --pack demo-windows-project"
+  },
+  "keywords": [
+    "flipper",
+    "ducky",
+    "keyboard",
+    "automation",
+    "safe"
+  ],
+  "license": "MIT"
+}

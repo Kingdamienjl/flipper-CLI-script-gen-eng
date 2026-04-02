@@ -1,0 +1,11 @@
+{
+  "id": "common-type-demo-text",
+  "title": "Common harmless text",
+  "description": "Shared harmless text composition",
+  "tags": ["compose", "text"],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign",
+  "steps": [
+    { "type": "text", "value": "Authorized lab demo: hello from V4" }
+  ]
+}

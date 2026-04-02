@@ -1,0 +1,9 @@
+{
+  "templateId": "linux-terminal-echo-hello",
+  "title": "linux-terminal-echo-hello",
+  "description": "Manifest for linux-terminal-echo-hello",
+  "tags": ["benign", "demo"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}

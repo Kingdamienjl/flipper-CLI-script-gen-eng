@@ -1,0 +1,12 @@
+{
+  "id": "base-benign-open",
+  "title": "Base benign opener",
+  "description": "Shared benign opening behavior",
+  "tags": ["base", "benign"],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign",
+  "vars": {},
+  "steps": [
+    { "type": "delay", "value": 300 }
+  ]
+}

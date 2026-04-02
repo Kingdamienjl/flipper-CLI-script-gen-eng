@@ -1,0 +1,9 @@
+{
+  "id": "demo-windows-project",
+  "title": "Windows benign demos",
+  "profile": "default-benign",
+  "targets": [
+    { "templateId": "windows-open-run-notepad", "format": "flipper" },
+    { "templateId": "windows-powershell-get-date", "format": "ducky" }
+  ]
+}
