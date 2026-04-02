@@ -1,0 +1,9 @@
+{
+  "templateId": "linux-terminal-echo-hello",
+  "title": "Linux Terminal Echo",
+  "description": "Open terminal and run echo hello",
+  "tags": ["linux", "terminal", "echo", "benign"],
+  "requiredVars": [],
+  "supportedOs": ["linux"],
+  "riskLevel": "benign"
+}

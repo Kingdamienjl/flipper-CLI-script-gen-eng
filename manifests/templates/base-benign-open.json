@@ -1,0 +1,9 @@
+{
+  "templateId": "base-benign-open",
+  "title": "Base benign opener",
+  "description": "Manifest for base benign opener",
+  "tags": ["benign", "base"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}

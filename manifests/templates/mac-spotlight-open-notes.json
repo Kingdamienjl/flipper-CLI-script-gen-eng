@@ -1,0 +1,9 @@
+{
+  "templateId": "mac-spotlight-open-notes",
+  "title": "macOS Spotlight Notes",
+  "description": "Open Notes via Spotlight",
+  "tags": ["mac", "spotlight", "notes", "benign"],
+  "requiredVars": [],
+  "supportedOs": ["mac"],
+  "riskLevel": "benign"
+}

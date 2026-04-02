@@ -1,0 +1,9 @@
+REM Ducky benign demo macro
+DELAY 300
+GUI r
+DELAY 200
+STRING powershell
+ENTER
+DELAY 400
+STRING Get-Date
+ENTER

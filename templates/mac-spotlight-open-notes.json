@@ -1,0 +1,17 @@
+{
+  "id": "mac-spotlight-open-notes",
+  "extends": "base-benign-open",
+  "compose": ["common-type-demo-text"],
+  "title": "macOS spotlight open Notes",
+  "description": "Use spotlight to open Notes",
+  "tags": ["mac", "spotlight", "notes"],
+  "supportedOs": ["mac"],
+  "riskLevel": "benign",
+  "requiredVars": [],
+  "steps": [
+    { "type": "keys", "value": "GUI SPACE" },
+    { "type": "delay", "value": 200 },
+    { "type": "text", "value": "Notes" },
+    { "type": "keys", "value": "ENTER" }
+  ]
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Safe Macro Generator V4</title>
+  <link rel="stylesheet" href="./web/styles.css" />
+</head>
+<body>
+  <h1>Safe Macro Generator V4</h1>
+  <p>Authorized lab/demo use only.</p>
+
+  <section>
+    <h2>Template browser</h2>
+    <input id="filter" placeholder="search text or os:windows or tag:benign" />
+    <ul id="templateList"></ul>
+  </section>
+
+  <section>
+    <h2>Prompt + options</h2>
+    <input id="promptInput" placeholder="optional benign prompt" />
+    <input id="templateId" placeholder="or template id" />
+    <select id="formatSelect">
+      <option value="flipper">flipper</option>
+      <option value="ducky">ducky</option>
+    </select>
+    <select id="osSelect">
+      <option value="">(auto)</option>
+      <option value="windows">windows</option>
+      <option value="linux">linux</option>
+      <option value="mac">mac</option>
+    </select>
+    <input id="varsInput" placeholder='vars JSON e.g. {"message":"hello"}' />
+    <button id="previewBtn">Preview</button>
+  </section>
+
+  <section>
+    <h2>Preview</h2>
+    <pre id="preview"></pre>
+    <h3>Validation errors</h3>
+    <pre id="errors"></pre>
+    <button id="downloadBtn">Download</button>
+    <button id="exportBtn">Export Manifest Stub</button>
+  </section>
+
+  <script type="module" src="./web/app.js"></script>
+</body>
+</html>

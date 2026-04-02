@@ -1,0 +1,9 @@
+{
+  "templateId": "windows-powershell-get-date",
+  "title": "Windows PowerShell Get-Date",
+  "description": "Open PowerShell and run Get-Date",
+  "tags": ["windows", "powershell", "date", "benign"],
+  "requiredVars": [],
+  "supportedOs": ["windows"],
+  "riskLevel": "benign"
+}
