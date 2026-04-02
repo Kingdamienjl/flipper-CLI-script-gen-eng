@@ -1,0 +1,9 @@
+{
+  "templateId": "windows-powershell-get-date",
+  "title": "windows-powershell-get-date",
+  "description": "Manifest for windows-powershell-get-date",
+  "tags": ["benign", "demo"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}

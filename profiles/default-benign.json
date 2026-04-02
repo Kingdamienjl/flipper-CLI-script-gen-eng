@@ -1,0 +1,6 @@
+{
+  "id": "default-benign",
+  "defaults": {
+    "message": "Authorized lab demo"
+  }
+}

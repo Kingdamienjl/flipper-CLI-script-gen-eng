@@ -1,0 +1,9 @@
+{
+  "templateId": "windows-open-run-notepad",
+  "title": "windows-open-run-notepad",
+  "description": "Manifest for windows-open-run-notepad",
+  "tags": ["benign", "demo"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}

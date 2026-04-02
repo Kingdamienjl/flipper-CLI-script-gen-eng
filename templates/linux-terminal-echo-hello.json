@@ -1,0 +1,16 @@
+{
+  "id": "linux-terminal-echo-hello",
+  "extends": "base-benign-open",
+  "title": "Linux terminal echo hello",
+  "description": "Open terminal and run echo hello",
+  "tags": ["linux", "terminal", "echo"],
+  "supportedOs": ["linux"],
+  "riskLevel": "benign",
+  "requiredVars": [],
+  "steps": [
+    { "type": "keys", "value": "CTRL ALT t" },
+    { "type": "delay", "value": 300 },
+    { "type": "text", "value": "echo hello" },
+    { "type": "keys", "value": "ENTER" }
+  ]
+}

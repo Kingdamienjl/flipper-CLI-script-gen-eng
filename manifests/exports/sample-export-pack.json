@@ -1,0 +1,13 @@
+{
+  "exportName": "sample-benign-pack",
+  "authorizedUseOnly": true,
+  "riskLevel": "benign",
+  "artifacts": [
+    {
+      "file": "demo-windows-project-windows-open-run-notepad.flipper.txt",
+      "sha256": "<generated-at-pack-time>",
+      "templateId": "windows-open-run-notepad",
+      "format": "flipper"
+    }
+  ]
+}

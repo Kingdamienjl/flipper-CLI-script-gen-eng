@@ -1,0 +1,9 @@
+{
+  "templateId": "base-benign-open",
+  "title": "base-benign-open",
+  "description": "Manifest for base-benign-open",
+  "tags": ["benign", "demo"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}

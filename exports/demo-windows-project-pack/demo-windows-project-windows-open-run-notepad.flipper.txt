@@ -1,0 +1,7 @@
+# Flipper benign demo macro
+DELAY 300
+KEY GUI r
+DELAY 200
+STRING notepad
+KEY ENTER
+STRING Authorized lab demo: hello from V4

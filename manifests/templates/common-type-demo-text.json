@@ -1,0 +1,9 @@
+{
+  "templateId": "common-type-demo-text",
+  "title": "common-type-demo-text",
+  "description": "Manifest for common-type-demo-text",
+  "tags": ["benign", "demo"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}
