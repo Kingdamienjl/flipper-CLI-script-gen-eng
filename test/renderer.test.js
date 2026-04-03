@@ -21,3 +21,8 @@ test('ducky renderer emits normalized format', () => {
   assert.match(output, /REM Ducky benign demo macro/);
   assert.match(output, /GUI r/);
 });
+
+test('renderer normalizes combo casing', () => {
+  const output = getRenderer('flipper').render({ steps: [{ type: 'keys', value: 'ctrl ALT T' }] });
+  assert.match(output, /KEY CTRL ALT t/);
+});
