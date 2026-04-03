@@ -1,11 +1,15 @@
 {
   "exportName": "sample-benign-pack",
+  "projectId": "demo-flipper-pack-project",
+  "projectTitle": "Flipper-friendly benign demo pack",
   "authorizedUseOnly": true,
   "riskLevel": "benign",
+  "artifactCount": 1,
   "artifacts": [
     {
-      "file": "demo-windows-project-windows-open-run-notepad.flipper.txt",
+      "file": "payloads/flipper/demo-flipper-pack-project-windows-open-run-notepad.flipper.txt",
       "sha256": "<generated-at-pack-time>",
+      "sizeBytes": 123,
       "templateId": "windows-open-run-notepad",
       "format": "flipper"
     }
