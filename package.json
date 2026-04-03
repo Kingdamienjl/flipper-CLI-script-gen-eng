@@ -10,8 +10,11 @@
   "scripts": {
     "test": "node --test",
     "validate": "node cli/index.js --validate",
+    "validate:all": "npm run validate && npm test",
     "list": "node cli/index.js --list-templates",
     "search": "node cli/index.js --search os:windows",
+    "search:tag": "node cli/index.js --search tag:benign",
+    "search:advanced": "node cli/index.js --search-text notes --search-os mac --search-tag benign,spotlight",
     "preview": "node cli/index.js --preview windows-open-run-notepad --format flipper --os windows",
     "prompt": "node cli/index.js --prompt \"windows powershell get-date\" --format ducky --os windows",
     "batch": "node cli/index.js --batch projects/demo-batch.json",

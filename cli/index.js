@@ -32,6 +32,7 @@ function printHelp() {
 Options:
   --list-templates
   --search <query>
+  --search-text <text> [--search-os <os>] [--search-tag <tag[,tag2...]>]
   --preview <templateId> [--format flipper|ducky] [--os windows|linux|mac] [--vars '{"k":"v"}']
   --prompt <benign request> [--format flipper|ducky] [--os windows|linux|mac]
   --batch <batchFile>
@@ -59,6 +60,21 @@ async function main() {
   if (has('--search')) {
     const q = arg('--search');
     const result = searchTemplates(templates, String(q || ''));
+    result.forEach((t) => console.log(`${t.id}: ${t.description}`));
+    return;
+  }
+
+  if (has('--search-text') || has('--search-os') || has('--search-tag')) {
+    const text = has('--search-text') ? String(arg('--search-text') || '') : '';
+    const os = has('--search-os') ? String(arg('--search-os') || '') : '';
+    const tags = has('--search-tag')
+      ? String(arg('--search-tag') || '')
+          .split(',')
+          .map((x) => x.trim())
+          .filter(Boolean)
+      : [];
+
+    const result = searchTemplates(templates, { text, os, tags });
     result.forEach((t) => console.log(`${t.id}: ${t.description}`));
     return;
   }

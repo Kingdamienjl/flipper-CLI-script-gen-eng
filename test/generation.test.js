@@ -25,3 +25,15 @@ test('batch generation renders multiple outputs', () => {
   });
   assert.equal(outputs.length, 2);
 });
+
+test('generation enforces required vars from manifest/template', () => {
+  const template = {
+    id: 'tmp-required',
+    supportedOs: ['windows'],
+    requiredVars: ['message'],
+    manifest: { requiredVars: ['message'] },
+    steps: [{ type: 'text', value: '{{message}}' }],
+  };
+
+  assert.throws(() => generateOne({ template, format: 'flipper', os: 'windows', vars: {} }));
+});
