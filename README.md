@@ -75,3 +75,22 @@ The UI uses backend API routes that call the same generator logic as the CLI.
 `npm run pack` creates:
 - `exports/<project>-pack/payloads/<format>/...`
 - `exports/<project>-pack/export-manifest.json` with metadata and SHA-256 checksums.
+
+## V4 feature checklist
+
+- stable template engine with `extends` / `compose` and circular guards
+- template manifests with tags + requiredVars + benign risk level
+- template search/filter by text, OS, and tags
+- strict validation command for templates/manifests/profiles/projects
+- benign fail-closed prompt parser
+- project presets + project pack export flow
+- export manifest metadata + artifact checksums
+- Flipper and Ducky plugin renderers
+- tests for parser/renderer/loader/validation/project-pack/search
+- lightweight web UI backed by the same server-side generator logic as CLI
+
+## Release verification
+
+```bash
+npm run release:verify
+```

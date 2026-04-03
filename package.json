@@ -18,6 +18,7 @@
     "project": "node cli/index.js --project demo-windows-project",
     "pack": "node cli/index.js --pack demo-flipper-pack-project",
     "quickstart": "npm run validate && npm run list && npm run preview && npm run prompt && npm run project && npm run pack",
+    "release:verify": "npm run validate && npm test && npm run quickstart",
     "web": "node web/server.js"
   },
   "keywords": [
