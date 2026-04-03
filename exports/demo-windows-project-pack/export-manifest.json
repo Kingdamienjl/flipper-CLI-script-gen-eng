@@ -1,0 +1,20 @@
+{
+  "exportName": "demo-windows-project-pack",
+  "authorizedUseOnly": true,
+  "riskLevel": "benign",
+  "createdAt": "2026-04-02T01:28:59.928Z",
+  "artifacts": [
+    {
+      "file": "demo-windows-project-windows-open-run-notepad.flipper.txt",
+      "sha256": "1cc7fb3eb059f772fe140a1092b8ac86cf92629c398f2ecca5b95c1fdda15e62",
+      "templateId": "windows-open-run-notepad",
+      "format": "flipper"
+    },
+    {
+      "file": "demo-windows-project-windows-powershell-get-date.ducky.txt",
+      "sha256": "bae5957d8829724f6e576cadf58428e840f8b3a37baddcc84d13dbbddf837836",
+      "templateId": "windows-powershell-get-date",
+      "format": "ducky"
+    }
+  ]
+}

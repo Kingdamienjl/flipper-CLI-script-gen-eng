@@ -1,0 +1,10 @@
+{
+  "id": "demo-flipper-pack-project",
+  "title": "Flipper-friendly benign demo pack",
+  "profile": "default-benign",
+  "targets": [
+    { "templateId": "windows-open-run-notepad", "format": "flipper", "os": "windows" },
+    { "templateId": "linux-terminal-echo-hello", "format": "flipper", "os": "linux" },
+    { "templateId": "mac-spotlight-open-notes", "format": "flipper", "os": "mac" }
+  ]
+}

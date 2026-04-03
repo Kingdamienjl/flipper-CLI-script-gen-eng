@@ -1,0 +1,9 @@
+{
+  "templateId": "common-type-demo-text",
+  "title": "Common harmless text",
+  "description": "Manifest for common harmless text composition",
+  "tags": ["benign", "compose", "text"],
+  "requiredVars": [],
+  "supportedOs": ["windows", "linux", "mac"],
+  "riskLevel": "benign"
+}

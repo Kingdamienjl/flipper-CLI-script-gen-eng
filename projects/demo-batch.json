@@ -1,0 +1,6 @@
+{
+  "jobs": [
+    { "templateId": "windows-open-run-notepad", "format": "flipper", "os": "windows" },
+    { "templateId": "linux-terminal-echo-hello", "format": "ducky", "os": "linux" }
+  ]
+}

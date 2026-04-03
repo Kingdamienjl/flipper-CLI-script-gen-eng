@@ -1,0 +1,19 @@
+{
+  "id": "windows-powershell-get-date",
+  "extends": "base-benign-open",
+  "title": "Windows powershell Get-Date",
+  "description": "Open run dialog and run PowerShell Get-Date",
+  "tags": ["windows", "powershell", "date"],
+  "supportedOs": ["windows"],
+  "riskLevel": "benign",
+  "requiredVars": [],
+  "steps": [
+    { "type": "keys", "value": "GUI r" },
+    { "type": "delay", "value": 200 },
+    { "type": "text", "value": "powershell" },
+    { "type": "keys", "value": "ENTER" },
+    { "type": "delay", "value": 400 },
+    { "type": "text", "value": "Get-Date" },
+    { "type": "keys", "value": "ENTER" }
+  ]
+}

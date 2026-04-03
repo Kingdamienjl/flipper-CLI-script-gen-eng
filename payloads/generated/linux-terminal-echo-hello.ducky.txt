@@ -1,0 +1,6 @@
+REM Ducky benign demo macro
+DELAY 300
+CTRL ALT t
+DELAY 300
+STRING echo hello
+ENTER

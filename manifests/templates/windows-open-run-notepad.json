@@ -1,0 +1,9 @@
+{
+  "templateId": "windows-open-run-notepad",
+  "title": "Windows Run -> Notepad",
+  "description": "Open Run dialog and start Notepad",
+  "tags": ["windows", "run", "notepad", "benign"],
+  "requiredVars": [],
+  "supportedOs": ["windows"],
+  "riskLevel": "benign"
+}
