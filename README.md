@@ -1,19 +1,19 @@
-# flipper-CLI-script-gen-eng V4
+# Safe Macro Generator V4
 
-> **Authorized-use only**: restricted to benign keyboard automation demos for approved internal labs, classrooms, and test environments where you have explicit permission.
+> Authorized-use only. This project is restricted to benign keyboard macro demos in environments where you have explicit permission.
 
-## Safety boundaries (non-negotiable)
+## Safety boundaries
 
-This project **blocks** and does not support:
-- stealth/hidden execution
+Blocked by design:
+- hidden/stealth execution
 - download-and-execute
 - credential capture
 - persistence
 - remote shells
-- security-tool disablement
-- obfuscation/bypass/phishing
+- disabling security tools
+- obfuscation/phishing/bypass behavior
 
-Outputs are plain text keyboard macros only (Flipper-style or Ducky-style) for harmless demos.
+Outputs are plain-text Flipper/Ducky style macro files only.
 
 ## Install
 
@@ -21,69 +21,57 @@ Outputs are plain text keyboard macros only (Flipper-style or Ducky-style) for h
 npm install
 ```
 
-## Quickstart
+## Quickstart (works as written)
+
+```bash
+npm run quickstart
+```
+
+This runs:
+1. validation
+2. template listing
+3. preview generation
+4. prompt generation
+5. project generation
+6. project pack export
+
+## Common commands
 
 ```bash
 npm run validate
 npm run list
+npm run search
 npm run preview
 npm run prompt
+npm run batch
 npm run project
 npm run pack
+npm run web
 ```
 
-## CLI examples
+## Template coverage (benign examples)
 
-```bash
-node cli/index.js --list-templates
-node cli/index.js --search os:windows
-node cli/index.js --search tag:benign
-node cli/index.js --preview windows-open-run-notepad --format flipper --os windows
-node cli/index.js --prompt "windows powershell get-date" --format ducky --os windows
-node cli/index.js --batch projects/demo-batch.json
-node cli/index.js --project demo-windows-project
-node cli/index.js --validate
-node cli/index.js --pack demo-windows-project
-```
+- **Windows**
+  - open run dialog + notepad
+  - open PowerShell + `Get-Date`
+- **Linux**
+  - open terminal + `echo hello`
+  - open terminal + `gedit`
+- **macOS**
+  - spotlight + Notes
+  - spotlight + TextEdit
 
-## Project packs
-
-`--pack` generates:
-- payload files under `exports/<project>-pack/`
-- `export-manifest.json` containing `authorizedUseOnly`, `riskLevel=benign`, and SHA-256 checksums
-
-## Web UI (thin backend reuse)
-
-Run:
+## Web UI
 
 ```bash
 npm run web
 ```
 
 Open `http://localhost:4173`.
+The UI uses backend API routes that call the same generator logic as the CLI.
 
-UI includes:
-- template browser + search
-- prompt input
-- vars JSON input
-- format selector
-- preview pane
-- validation error area
-- download/export actions
+## Project packs
 
-## V4 layout
-
-- `cli/` command-line interface
-- `lib/` core engine (loading, validation, parsing, generation, rendering)
-- `templates/` benign macro templates
-- `manifests/` template/export manifests
-- `profiles/` profile defaults
-- `projects/` project presets and batch files
-- `payloads/generated/` generated outputs
-- `exports/` packed project exports
-- `web/` thin UI + API server
-- `test/` automated tests
-
-## Authorized use statement
-
-By using this tool, you confirm legal authorization and benign lab/demo intent.
+`npm run pack` creates:
+- `exports/<project>-pack/payloads/<format>/...`
+- `exports/<project>-pack/export-manifest.json` with metadata and SHA-256 checksums.

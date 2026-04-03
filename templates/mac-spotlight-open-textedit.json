@@ -1,0 +1,16 @@
+{
+  "id": "mac-spotlight-open-textedit",
+  "extends": "base-benign-open",
+  "title": "macOS spotlight open TextEdit",
+  "description": "Use spotlight to open TextEdit",
+  "tags": ["mac", "spotlight", "textedit"],
+  "supportedOs": ["mac"],
+  "riskLevel": "benign",
+  "requiredVars": [],
+  "steps": [
+    { "type": "keys", "value": "GUI SPACE" },
+    { "type": "delay", "value": 200 },
+    { "type": "text", "value": "TextEdit" },
+    { "type": "keys", "value": "ENTER" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "templateId": "linux-terminal-open-text-editor",
+  "title": "Linux Terminal Open Text Editor",
+  "description": "Open terminal and launch local text editor",
+  "tags": ["linux", "terminal", "editor", "benign"],
+  "requiredVars": [],
+  "supportedOs": ["linux"],
+  "riskLevel": "benign"
+}

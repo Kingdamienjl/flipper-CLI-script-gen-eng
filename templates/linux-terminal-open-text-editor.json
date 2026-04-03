@@ -1,0 +1,16 @@
+{
+  "id": "linux-terminal-open-text-editor",
+  "extends": "base-benign-open",
+  "title": "Linux terminal open text editor",
+  "description": "Open terminal and launch a local text editor",
+  "tags": ["linux", "terminal", "editor"],
+  "supportedOs": ["linux"],
+  "riskLevel": "benign",
+  "requiredVars": [],
+  "steps": [
+    { "type": "keys", "value": "CTRL ALT t" },
+    { "type": "delay", "value": 300 },
+    { "type": "text", "value": "gedit" },
+    { "type": "keys", "value": "ENTER" }
+  ]
+}

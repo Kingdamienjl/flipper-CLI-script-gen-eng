@@ -17,6 +17,16 @@ test('parser resolves spotlight harmless app intent', () => {
   assert.equal(out.templateId, 'mac-spotlight-open-notes');
 });
 
+test('parser resolves linux text editor intent', () => {
+  const out = parsePrompt('On linux open terminal and launch text editor');
+  assert.equal(out.templateId, 'linux-terminal-open-text-editor');
+});
+
+test('parser resolves mac textedit spotlight intent', () => {
+  const out = parsePrompt('Use spotlight to open TextEdit on mac');
+  assert.equal(out.templateId, 'mac-spotlight-open-textedit');
+});
+
 test('parser resolves harmless canned string intent', () => {
   const out = parsePrompt('Type a harmless string: authorized lab demo');
   assert.equal(out.templateId, 'common-type-demo-text');

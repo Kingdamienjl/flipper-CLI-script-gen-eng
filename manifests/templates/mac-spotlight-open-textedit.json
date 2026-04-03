@@ -1,0 +1,9 @@
+{
+  "templateId": "mac-spotlight-open-textedit",
+  "title": "macOS Spotlight TextEdit",
+  "description": "Open TextEdit via spotlight",
+  "tags": ["mac", "spotlight", "textedit", "benign"],
+  "requiredVars": [],
+  "supportedOs": ["mac"],
+  "riskLevel": "benign"
+}
